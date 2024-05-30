@@ -1,0 +1,24 @@
+POINTERS ASSIGNMENT
+
+1.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    cin>>a>>b;
+    int *p1 = &a, *p2 = &b;
+    cout<<(*p1)*(*p2)<<endl;
+}
+
+2.
+option 1) p is a pointer and q is integer
+
+3.
+option 3) 11 10 11
+
+4.
+option 4) b gets value of a
+
+5.
+no, this code isnt correct as the pointer ptr is being assigned a integer value instead of the address of a variable
