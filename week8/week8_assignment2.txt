@@ -1,0 +1,60 @@
+TIME COMPLEXITY
+
+1.
+outer loop --> n times
+inner loop --> j < root(n)
+
+j = 0,1,2,3,4,...,root(n)-1 ---> root(n) times 
+
+O(n*root(n)) ---> O(n^3/2)
+
+Ans: O(n^3/2)
+
+2.
+outer loop --> n times
+inner loop --> j = 1,2,4,...,2^x
+
+2^x = n; x = logn
+
+Ans: O(n*logn)
+
+3.
+outer loop --> n times
+inner loop --> j < root(n)
+
+j = 1,2,4,...,2^x 
+2^x = root(n); x = log(n^1/2)
+
+Ans: O(n*logn)
+
+4.
+i=n/2; j=0,1,2,....,n/2-1 ---> n/2
+i=n/4; j=0,1,2,....,n/4-1 ---> n/4
+i=n/8; j=0,1,2,....,n/8-1 ---> n/8
+
+i=n/(2^x); j=0,1,2,....,n/(2^x)-1 ---> n/(2^x)
+
+n/(2^x) = 1
+2^x = n
+x = logn
+
+1+2+4+8+...+n/8+n/4+n/2
+1 + 1+2+4+8+...+n/8+n/4+n/2 - 1
+
+n-1
+
+Ans: O(n)
+
+5.
+i=1; j=n,n-1,n-2,....,3,2 --> n-1
+i=2; j=n,n-1,n-2,....,3 --> n-2
+i=4; j=n,n-1,...,6,5 --> n-4
+
+i=2^x; j=n,n-1,...,2^x+1 ---> n-2^x
+
+(n-1)+(n-2)+....+(n-2^x) = n*x + (1+2+2^2+...+2^x)
+			 = n*logn + 2n - 1
+
+Ans: O(nlogn)
+
+
