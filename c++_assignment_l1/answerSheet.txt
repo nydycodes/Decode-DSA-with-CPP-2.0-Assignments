@@ -1,0 +1,15 @@
+1.
+  cout<<"Physics"<<endl;
+  cout<<"Wallah"<<endl;
+2.
+  cout<<5+5<<endl;
+3.
+  int -> 4 bytes
+  bool -> 1 bytes
+  float -> 4 bytes
+4.
+  output: 6 4
+5.
+  cout<<"circumference: "<<2*3.14*10<<endl;
+6.
+  _FLOAT and FLOAT -> valid identifiers
