@@ -1,0 +1,3 @@
+1. the getAverage function has no definition, so it wont modify the code in any way.
+2. the first parameter in the function call is a value (balance[0]) and not a pointer to the balance array, 
+   it should have been getAverage(balance,5) or getAverage(&balance[0],5)
